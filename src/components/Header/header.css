@@ -1,0 +1,37 @@
+@import url('../../varibles.css');
+
+header{
+    display: flex;
+    align-content: center;
+}
+header .logo{
+    font-size: 1.25rem;
+}
+header .logo:hover{
+    color: var(--font-stand-out);
+}
+.nav__container{
+    width: 100vw;
+    height: 52px;
+    background: var(--bg-header);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.25rem;
+}
+.nav__container-list{
+    display: flex;
+}
+.nav__container-list__links{
+    margin-left: 1.25rem;
+    text-transform: capitalize;
+}
+.nav__container-list__links:hover{
+    color: var(--font-stand-out);
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav__container-user-icon:hover{
+    transform: scale(1.2);
+    transition: transform 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
