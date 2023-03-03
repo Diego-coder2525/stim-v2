@@ -1,0 +1,38 @@
+.Store-Page__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.Store-Page__cards-img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 2rem;
+    /* mask-image: linear-gradient(0deg,var(--mask-color),var(--mask-color)); */
+    filter: opacity(0.5);
+}
+
+
+.Store-Page__cards-price{
+    align-self: flex-start;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: .5rem;
+    position: absolute;
+}
+
+.Store-Page__cards-title{
+    background-color: var(--mask-title);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}

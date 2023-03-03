@@ -1,0 +1,51 @@
+.Store-Page__section{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.Store-Page__container-filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Stora-Page__title-filters{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+
+
+
+.Store-Page__container-games{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Store-Page__games-filters{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin: 0 0 1.2rem;
+    color: #7E7E7E;
+}
+
+.Store-Page__games-filters>span{
+    color: #B67ED9;
+}
+
+.Store-Page__container-cards{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50vw;
+}
+
+
+
+
