@@ -1,0 +1,23 @@
+@import url("../../../varibles.css");
+
+.pagination__container-items {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.pagination__container-btn {
+  color: var(--text-color);
+  padding: 0.5em 1.1em;
+  font-size: 0.9375rem;
+  background: var(--bg-color-layouts);
+  border: 1px solid var(--text-and-border-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagination__container-btn:hover {
+  color: var(--font-stand-out);
+  border: 1px solid var(--box-shadow-color);
+  background: var(--bg-color-cards);
+  transition: color, border, background 800ms ease-in;
+}

@@ -11,8 +11,8 @@
     height: 200px;
     width: 200px;
     border-radius: 2rem;
-    /* mask-image: linear-gradient(0deg,var(--mask-color),var(--mask-color)); */
-    filter: opacity(0.5);
+    object-fit: cover;
+    filter: opacity(0.3);
 }
 
 
@@ -29,10 +29,13 @@
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     padding: .5rem;
-    width: 100%;
+    width: 200px;
     position: relative;
-    bottom: 50px;
+    bottom: 36px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
