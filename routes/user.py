@@ -6,8 +6,8 @@ from cryptography.fernet import Fernet
 from sqlalchemy.orm import Session
 from starlette.status import HTTP_204_NO_CONTENT
 from fastapi.templating import Jinja2Templates
-from models.user import User as UserModel
-
+from models.models import User as UserModel
+from sqlalchemy import text
 templates = Jinja2Templates(directory="templates")
 user = APIRouter()
 key = Fernet.generate_key()
@@ -57,6 +57,8 @@ async def create_user(user: User, db: Session=Depends(get_db)):
     new_user = {"name":user.name,"email":user.email}
     new_user["password"]= f.encrypt(user.password.encode("utf-8"))
     r = db.execute(UserModel.__table__.insert().values(new_user))
+    if db.query(UserModel).count() == 0:
+        db.execute(text("ALTER TABLE users AUTO_INCREMENT = 1"))
     db.commit() 
     lrid = r.lastrowid
     stmt = db.execute(UserModel.__table__.select().where(UserModel.__table__.c.id == lrid)).fetchone()
