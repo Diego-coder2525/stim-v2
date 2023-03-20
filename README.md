@@ -1,0 +1,3 @@
+# stim-v2
+Jodi el primero pipipi
+WEB PROYECT THAT USES FASTAPI AND REACT.. ON STAND BY
